@@ -1,88 +1,243 @@
-# 🎟️ TicketBari - Premium Online Ticket Booking Platform
+# 🎫 TicketBari - Online Ticket Booking Platform
 
-An ultra-premium, full-stack Online Ticket Booking Platform built using the modern **MERN stack paradigm** (Express, React, Node.js). Designed carefully to captivate recruiters and technical leads through pristine UI/UX alignment, absolute code fidelity, dynamic user roles, Stripe transaction processing, and deep system architecture.
+## Project Name
 
----
-
-## 🚀 Live URL
-*   **Development Access Link:** [TicketBari Dev Platform](https://ais-dev-bwrq67n3dopl4daldi3iw4-882823174199.asia-southeast1.run.app)
-*   **Shared Preview Link:** [TicketBari Shared Preview](https://ais-pre-bwrq67n3dopl4daldi3iw4-882823174199.asia-southeast1.run.app)
+**TicketBari - Online Ticket Booking Platform**
 
 ---
 
-## 🎯 Project Purpose
-**TicketBari** is built to bridge the gap between transit carrier operators and travelers across Bangladesh. Our vision is to eliminate the archaic queues for Bus, Train, Launch, and Flight routes by establishing a single-screen real-time inventory directory that supports instant vendor approvals and secure Stripe billing.
+## Project Purpose
+
+TicketBari is a full-stack MERN-based online ticket booking platform where users can discover and book travel tickets such as Bus, Train, Launch, and Plane tickets. The platform supports role-based access control with User, Vendor, and Admin dashboards to manage bookings, tickets, payments, and advertisements efficiently.
+
+The goal of this project is to provide a modern, secure, and user-friendly ticket management system with real-time booking functionality and online payment integration.
 
 ---
 
-## 💎 Primary Recruiter-Captivating Highlights
-*   **Complete Adaptive Dark/Light Mode Engine:** Fully native system styling variables with instantaneous CSS transition curves. No flashing or layout shifts.
-*   **Stripe Merchant Simulated Checkout:** A completely styled credit card terminal implementing real cryptographic validations, dynamic bill computations, and particle canvas celebrations on success.
-*   **Triple-Role Operations Terminal (User, Vendor, Admin Panels):**
-    *   **Travelers:** Check countdown departures, cancel temporary pending reservations, buy tickets securely, and read printable billing transactions.
-    *   **Vendors:** Register carrier operators readonly, list transport assets, update/delete items, approve/reject travelers' seats, and see dynamic Earnings charts.
-    *   **Administrators:** Approve vendor rosters, flag fraudulent accounts (locks listings immediately), and promote featured routes to home advertisers (max 6 checked dynamically).
+## Live URL
+
+### Client
+
+https://your-client-url.com
+
+### Server
+
+https://your-server-url.com
 
 ---
 
-## 🛠️ Key Features
-1.  **Dynamic Station Finder Search:** From ➔ To live inventory filter with Transport carrier type categories and Sort Budgets toggle.
-2.  **Departure Countdown Timer:** Real-time javascript epoch calculations leading up to exact trip minutes. Hidden instantaneously if bookings get rejected.
-3.  **Fraud Audit Guardrails:** If a vendor gets marked as Fraud, all associated routes vanish from client listings instantaneously and operational dashboard permissions get restricted.
-4.  **Automatic Seating Reducer:** Once Stripe secure invoices clear, the server database transaction subtracts available seating seats safely.
-5.  **Secure JWT Authentication:** Tokenized local cookie payload state authorization guarding core REST API routes cleanly.
-6.  **Seamless State Restorations:** Logged-in credentials saved inside secure local storages. Refreshing a dashboard route will NOT throw a 404 or redirect unless a signature expires.
+# Key Features
+
+## Authentication & Authorization
+
+* Email & Password Authentication
+* Google Login Integration
+* JWT Protected Routes
+* Role-Based Access Control
+
+  * User
+  * Vendor
+  * Admin
+* Auto Login After Registration
+* Persistent Login on Page Reload
 
 ---
 
-## 📦 Installed NPM Packages
-*   `react` & `react-dom` — Core Single Page frontend engine
-*   `react-router-dom` — Dynamic Client Router (with fallback 404 controllers)
-*   `motion` (from `motion/react`) — Advanced hardware-accelerated SVG entry animations
-*   `lucide-react` — Comprehensive iconography kit
-*   `recharts` — Advanced custom SVG charting visualization for Vendor Revenues
-*   `canvas-confetti` — Delightful celebrate particles trigger
-*   `express` — High-speed API router backend
-*   `jsonwebtoken` — Cryptographic User Authentication Tokens
-*   `bcryptjs` — Blowfish password hashing
-*   `dotenv` — Environment configuration keys wrapper
+## Home Page
+
+* Modern Hero Banner / Slider
+* Advertisement Section
+* Featured Advertised Tickets (Maximum 6)
+* Latest Tickets Section
+* Popular Routes Section
+* Why Choose Us Section
+* Fully Responsive Design
 
 ---
 
-## 🛠️ Environment Variables Configuration
+## Ticket Management
 
-To run TicketBari locally or deploy to standard production platforms, you must configure the following key-value variables inside `.env`:
+### Users
 
-```env
-# Server Ingress Port (Default: 3000)
-PORT=3000
+* Browse Approved Tickets
+* View Ticket Details
+* Search Tickets by Route
+* Filter by Transport Type
+* Sort by Price
+* Book Tickets
+* Track Booking Status
+* Stripe Payment Integration
+* Transaction History
+* Download PDF Ticket (Optional)
 
-# JSON Web Token Secret signature
-JWT_SECRET="SUPER_CRYPTOGRAPHIC_SECURE_TOKEN_SIGNATURE_KEY"
+### Vendors
 
-# MongoDB Database URI Credentials 
-# (Currently abstracts into data/db.json during local developer testing for immediate zero-config previews!)
-MONGODB_URI="mongodb+srv://<username>:<password>@cluster0.mongodb.net/ticketbari"
+* Add New Tickets
+* Upload Ticket Images via imgbb
+* Manage Added Tickets
+* Update/Delete Tickets
+* Accept/Reject Booking Requests
+* Revenue Analytics Dashboard
+
+### Admins
+
+* Approve or Reject Tickets
+* Manage Users
+* Assign Roles
+* Mark Vendors as Fraud
+* Advertise Approved Tickets
+* Control Homepage Featured Tickets
+
+---
+
+## Ticket Booking Features
+
+* Booking Quantity Validation
+* Departure Time Countdown
+* Pending Booking Status
+* Accepted / Rejected Booking Management
+* Automatic Quantity Reduction After Payment
+* Expired Tickets Cannot Be Booked
+* Payment Disabled After Departure Time
+
+---
+
+## Dashboard Features
+
+### User Dashboard
+
+* User Profile
+* My Booked Tickets
+* Transaction History
+
+### Vendor Dashboard
+
+* Vendor Profile
+* Add Ticket
+* My Added Tickets
+* Requested Bookings
+* Revenue Overview
+
+### Admin Dashboard
+
+* Admin Profile
+* Manage Tickets
+* Manage Users
+* Advertise Tickets
+
+---
+
+## Payment System
+
+* Stripe Payment Gateway
+* Secure Payment Processing
+* Payment History Tracking
+* Automatic Booking Status Update
+* Transaction Records
+
+---
+
+## Advanced Features
+
+* Dark / Light Theme Toggle
+* Pagination
+* Protected APIs
+* Loading Spinner
+* Custom Error Page
+* Mobile Responsive Design
+* Countdown Timer
+* Chart-Based Revenue Analytics
+* PDF Ticket Download (Optional)
+* Live Seat Map (Optional)
+
+---
+
+# Technology Stack
+
+## Frontend
+
+* React.js
+* React Router DOM
+* Tailwind CSS
+* DaisyUI
+* Axios
+* React Hook Form
+* TanStack Query
+* Firebase Authentication
+* Swiper.js
+* React Icons
+* Recharts
+* React Countdown
+* React Hot Toast
+
+---
+
+## Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* JWT
+* Stripe API
+* Cors
+* Dotenv
+
+---
+
+
+# Deployment Instructions
+
+## Frontend Deployment
+
+* Build React Application
+* Deploy to Firebase Hosting / Netlify / Vercel
+
+## Backend Deployment
+
+* Deploy Express Server to Render / Railway / VPS
+
+---
+
+## Important Deployment Requirements
+
+✅ No CORS Issues
+
+✅ No 404 Errors on Reload
+
+✅ No 504 Gateway Timeout Errors
+
+✅ Private Routes Work Properly After Refresh
+
+✅ Environment Variables Secured
+
+✅ MongoDB Credentials Protected
+
+---
+
+# Admin Credentials
+
+```text
+Admin Email: admin@example.com
+Password: ********
 ```
 
 ---
 
-## 🏁 Deployed Build, Run & Development Guides
+# Future Improvements
 
-### 1. Developer Live Sandbox
-Instantly spin up BOTH the express backend database proxy server alongside Vite asset compiling:
-```bash
-npm run dev
-```
+* Real-Time Seat Availability
+* SMS Ticket Confirmation
+* Email Notifications
+* Refund Management
+* QR Code Ticket Verification
+* Mobile Application Version
 
-### 2. Standalone Production Build
-Vite compiles the React asset package to `/dist`, and esbuild packs the Express backend down into a single, lightning-efficient static CommonJS `dist/server.cjs` file, eliminating CORS, file path, and relative ES module complaints on Cloud Run container deployments:
-```bash
-npm run build
-```
+---
 
-### 3. Production Boot
-Directly boot the compiled Node instance:
-```bash
-npm run start
-```
+# License
+
+This project is created for educational and portfolio purposes.
+
+---
+
+© 2026 TicketBari. All Rights Reserved.
