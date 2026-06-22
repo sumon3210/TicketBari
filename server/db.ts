@@ -142,11 +142,11 @@ export async function seedInitialData() {
 
     const regularUser: User = {
       id: "usr_user",
-      name: "Mohammad Sumon",
+      name: "Mr. Sumon",
       email: "infosumon15@gmail.com",
       passwordHash: b3,
       role: "User",
-      profilePic: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+      profilePic: "/my-profile.png",
       isFraud: false
     };
 
