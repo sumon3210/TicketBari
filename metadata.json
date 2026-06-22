@@ -1,0 +1,6 @@
+{
+  "name": "TicketBari",
+  "description": "Premium full-stack travel booking platform for buses, trains, launches, and planes. Built with React, Tailwind, and Node.js.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
